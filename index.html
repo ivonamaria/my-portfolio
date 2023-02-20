@@ -1,100 +1,135 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<meta
-			http-equiv="X-UA-Compatible"
-			content="ie=edge"
-		/>
-		<title>Lernantino // Web Developer</title>
-		<link
-			rel="stylesheet"
-			href="./assets/css/style.css"
-		/>
-	</head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Web Developer</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <!-- main logo / nav -->
+  <header>
+    <h1>Iwona Malkinska</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="#about">About Me</a>
+        </li>
+        <li>
+          <a href="#work">Work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact me</a>
+        </li>
+        <li>
+          <a href="#resume">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- hero banner -->
+  <div class="hero-banner">
+    <div>
+      <h2>Welcome to my portfolio!</h2>
+    </div>
+  </div>
 
-	<body>
-		<!-- main logo / nav -->
-		<header>
-			<h1>Lernantino</h1>
-			<nav></nav>
-		</header>
-
-		<!-- hero banner -->
-		<section class="hero-banner">
-			<div>
-				<h2>Cool subtitle here!</h2>
-			</div>
-		</section>
-
-		<main class="page-wrapper">
-			<!-- about me -->
-			<section
-				class="page-section"
-				id="about"
-			>
-				<h2>About Me</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, quas?</p>
-			</section>
-
-			<!-- portfolio container -->
-			<section
-				class="page-section"
-				id="work"
-			>
-				<h2>Work</h2>
-				<div class="flex"></div>
-				<div>
-					<!-- first card -->
-					<a
-						href="#"
-						class="proj2 flex-item"
-						><div>
-							<h3>title2</h3>
-							<p>category</p>
-              <div>
-						</div></a
-					>
-					<!-- second card -->
-					<a
-						href="#"
-						class="proj3 flex-item"
-							<h3>title3</h3>
-							<p>category</p>
-						</div></a
-					>
-					<!-- third card -->
-					<a
-						href="#"
-						class="proj4 flex-item"
-						><div>
-							<h3>title4</h3>
-							<p>category</p>
-						</div></a
-					>
-					<!-- fourth card -->
-					<a
-						href="#"
-						class="proj5 flex-item"
-						><div>
-							<h3>title5</h3>
-							<p>category</p>
-						</div></a
-					>
-				</div>
-			</section>
-
-			<!-- contact -->
-			<section
-				class="page-section contact"
-				id="contact"
-			>
-				<h2>Contact Me</h2>
-			</section>
-		</main>
-	</body>
+  <main class="page-wrapper">
+    
+    <!-- about me -->
+    <section class="page-section" id="about">
+      <div class="section-title">
+        <h2>About Me</h2>
+      </div>
+      
+      <div class="section-content">
+        <img src="/images/02-hero-bg.jpg" alt="Image">
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Ut elementum leo vel vestibulum congue. Curabitur placerat mi nisi, in vehicula
+          nibh consectetur id. Donec ultrices, turpis quis placerat gravida, turpis dolor
+          feugiat ex, sit amet malesuada sem tellus vitae diam. In venenatis augue eget tincidunt volutpat.
+          Pellentesque non egestas dui. Suspendisse potenti. Nunc ac sem ex. Vivamus quis elit nec libero commodo
+          blandit in et odio. 
+          </p>
+          
+          <p>
+          Nulla facilisis lacus enim, sed hendrerit tortor consectetur nec. Quisque at sem libero.
+          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+          Vestibulum nunc nunc, pellentesque sit amet condimentum eget, molestie eu magna. Morbi volutpat
+          sollicitudin enim, a feugiat sapien egestas at. Morbi nibh felis, condimentum nec enim ac, molestie consequat
+          urna. Ut in quam risus.
+         
+        
+          <hr>
+        </p>
+      </div>
+      
+    </section>
+        
+    <!-- portfolio container -->
+    <section class="page-section" id="work">
+      <div class="section-title">
+        <h2>Work</h2>
+      </div>
+      <div class="section-content">
+        <div class="flex">
+        <!-- first card -->
+          <a href="#" class="proj1 flex-item background-image">
+            <div>
+              <h3>Surf Report</h3>
+              <p>MERN Stack</p>
+            </div>
+          </a>
+          <!-- second card -->
+          <a href="#" class="proj2 flex-item background-image">
+            <div>
+              <h3>LED Wall</h3>
+              <p>Node/IoT</p>
+            </div>
+          </a>
+          <!-- third card -->
+          <a href="#" class="proj3 flex-item background-image">
+            <div>
+              <h3>Calculator </h3>
+              <p>React/JavaScript</p>
+            </div>
+          </a>
+          <!-- forth card -->
+          <a href="#" class="proj4 flex-item background-image">
+            <div>
+              <h3>Pastel Puzzels</h3>
+              <p>MERN Stack</p>
+            </div>
+          </a>
+          <!-- fifth card -->
+          <a href="#" class="proj5 flex-item background-image">
+            <div>
+              <h3>Run Buddy</h3>
+              <p>HTML/CSS</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+    </section>
+    <!-- contact -->
+    <footer>
+      <section class="page-section contact" id="contact">
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+        <div class="section-content">
+            <a href="#" class="tel"> +44 000000000</a>
+            <a href="#" target="_blank" class="email">Email</a>
+            <a href="#" target="_blank" class="GH">GitHub</a>
+            <a href="https://twitter.com" target="_blank" class="TW"> Twitter</a>
+        </div>
+        
+      </section>
+    </footer>
+    
+  </main>
+</body>
 </html>
