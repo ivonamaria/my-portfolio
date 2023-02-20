@@ -1,149 +1,305 @@
+/* Global CSS styles */
+/* Set box-sizing to border-box and reset margin for all elements */
 * {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Set basic styles for body, roboto sourced from google fonts*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(218, 221, 221);
+  line-height: 1.5;
+}
+
+/* Set basic styles for headings and paragraphs */
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+p {
+  margin: 40px;
+  font-size: 18px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+/* Set styles for the header section */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(218, 221, 221);
+  box-shadow: 0 5px 35px rgba(177, 177, 177, 0.4);
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin-left: 14px;
+  text-transform: uppercase;
+  font-size: 32px;
+  transition: color .3s;
+}
+
+header h1:hover {
+  color: #7e144d;
+}
+
+/* Set styles for the hero banner section */
+.hero-banner {
+  background: rgb(118, 86, 118);
+  background-image: url("../images/02-hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+  min-height: 30vh;
+  color: rgb(222, 218, 222);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-banner h2 {
+  text-align: bottom;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  transition: color .3s;
+}
+
+.hero-banner h2:hover {
+  color: rgb(222, 218, 222);
+}
+
+/* Set styles for the navigation bar */
+nav li {
+  list-style: none;
+  margin-right: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 10px 10px;
+  font-weight: bold;
+  transition: color .3s;
+  text-transform: uppercase;
+}
+
+nav li a:hover {
+  color: rgb(118, 86, 118);
+}
+
+/* Set styles for the project images */
+img {
+  padding-top: 30px;
+  height: 400px;
+  float: right;
+  padding: 20px 20px;
+}
+
+img:hover {
+  opacity: 60%;
+  transition: img .5s ease-in-out;
+}
+
+/* Set styles for the page wrapper */
+.page-wrapper {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div h2 {
+	text-transform: uppercase;
+	font-size: 24px;
+}
+
+/* Set background images for portfolio projects */
+.proj1 {
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+.proj2 {
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+.proj3 {
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+.proj4 {
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+.proj5 {
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+/* Set the background image properties */
+.background-image {
+  background-size: cover;
+  background-position: center;
+}
+
+/* Set the properties for a flex container */
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Set the properties for a flex item */
+.flex-item {
+  display: flex;
+  align-items: flex-end;
+  flex-basis: calc(50% - 1em);
+  margin: .5em;
+  min-height: 200px;
+  position: relative;
+}
+
+/* Set the properties for the first flex item */
+.flex-item:first-child {
+  min-height: 300px;
+  flex-basis: 100%;
+}
+
+/* Set the properties for the overlay effect on flex items */
+.flex-item::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(93, 90, 90, 0.75);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Set the properties for the overlay effect on hover */
+.flex-item:hover::after {
+  background: rgb(255, 255, 255, 0);
+}
+
+/* Set the properties for the content of flex items */
+.flex-item div {
+  background-color: rgb(118, 86, 118);
+  padding: 10px;
+  z-index: 1;
+}
+
+/* Set the properties for links within flex containers */
+.flex > a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Set the properties for a section element */
+section {
+  margin: 2rem auto;
+  display: flex;
+}
+
+/* Set the properties for the title within a section */
+.section-title {
+  flex-basis: 20%;
+  padding: 16px 16px;
+  border-right: 8px solid #7e144d;
+  justify-content: flex-end;
+  display: flex;
+}
+
+/* Set the properties for the content within a section */
+.section-content {
+  flex-basis: 80%;
+  margin: 24px;
+  padding: 16px;
+}
+
+/* Set the properties for links within section content */
+.section-content a {
+  color: black;
+  text-decoration: underline;
+}
+
+/* Set the properties for a contact section */
+.contact {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+/* Set the properties for links within a contact section */
+.contact a {
+  list-style: none;
+  margin: auto 16px;
+}
+
+/* Set the properties for links on hover within a contact section */
+.contact a:hover {
+  cursor: pointer;
+  color: #7e144d;
+}
+
+/* Set the properties for the footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Set the properties for media queries at certain screen sizes */
+@media screen and (max-width: 768px) {
+  section {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  /* Set the properties for the title within a section at smaller screen sizes */
+  .section-title {
+    border-right: none;
+    border-bottom: 0.5rem solid rgb(118, 86, 118)
+  }
+
+  /* Set the properties for the title and content within a section at smaller screen sizes */
+  .section-title, .section-content { 
+    flex-basis: 100%; 
+    margin-left: 8pxr; 
+    justify-content: flex-start;
+  }
+
+
+  /* Set the properties for flex items at smaller screen sizes */
+  .flex-item {
+    flex-basis: 100%;
+    min-height: 150px;
+  }
+
+  .flex-item:first-child {
+    min-height: 150px;
   }
   
-  body {
-	background-color: #d9dcd6;
-  }
-  
-  a {
-	color: #ffffff;
-	text-decoration: none;
-  }
-  
-  p {
-	font-size: 16px;
-  }
-  
-  /* Header CSS Properties */
-  
+/* Set the properties for flex items at smaller screen sizes*/
+
+}
+@media screen and (max-width: 400px) {
   .header {
-	padding: 20px;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	background-color: #2a607c;
-	color: #ffffff;
+    flex-direction: column;
   }
-  
-  .header h1 {
-	display: inline-block;
-	font-size: 48px;
-  }
-  
-  .header h1 .seo {
-	color: #d9dcd6;
-  }
-  
-  .header nav {
-	padding-top: 15px;
-	margin-right: 20px;
-	float: right;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-size: 20px;
-  }
-  
-  .header nav ul {
-	list-style-type: none;
-  }
-  
-  .header nav ul li {
-	display: inline-block;
-	margin-left: 25px;
-  }
-  
-  /* Hero CSS Properties */
-  
-  .hero {
-	height: 800px;
-	width: 100%;
-	margin-bottom: 25px;
-	background-size: cover;
-	background-position: center;
-  }
-  
-  /* Content CSS Properties */
-  /* Combined classes to decrease the code */
-  
-  .content {
-	width: 75%;
-	display: inline-block;
-	margin-left: 20px;
-  }
-  
-  .float-left {
-	float: left;
-	margin-right: 25px;
-  }
-  
-  .float-right {
-	float: right;
-	margin-left: 25px;
-  }
-  
-  /* Main content CSS Properties */
-  
-  .search-engine-optimization, .online-reputation-management, .social-media-marketing {
-	margin-bottom: 20px;
-	padding: 50px;
-	height: 300px;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	background-color: #0072bb;
-	color: #ffffff;
-  }
-  
-  .search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
-	max-height: 200px;
-  }
-  
-  .search-engine-optimization h2, .online-reputation-management h2, .social-media-marketing h2 {
-	margin-bottom: 20px;
-	font-size: 36px;
-  }
-  
-  /* Benefits CSS Properties */
-  
-  .benefits {
-	margin-right: 20px;
-	padding: 20px;
-	clear: both;
-	float: right;
-	width: 20%;
-	height: 100%;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	background-color: #2589bd;
-  }
-  
-  .benefit-lead, .benefit-brand, .benefit-cost {
-	margin-bottom: 32px;
-	color: white;
-  }
-  
-  .benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
-	margin-bottom: 10px;
-	text-align: center;
-  }
-  
-  /* To increase contrast ratio for accessibility, text colour changed to black */
-  .benefit-brand p, .benefit-cost p, .benefit-lead p {
-	color: black;
-  }
-  
-  .benefit-lead img, .benefit-brand img, .benefit-cost img {
-	display: block;
-	margin: 10px auto;
-	max-width: 150px;
-  }
-  
-  /* Footer CSS Properties */
-  
-  .footer {
-	padding: 30px;
-	clear: both;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	text-align: center;
-  }
-  
-  .footer h2 {
-	font-size: 20px;
-  }
+ 
+} 
