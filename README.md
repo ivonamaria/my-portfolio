@@ -1,7 +1,5 @@
 # Portfolio
 
-# Overview
-
 A portfolio that peaks into my skills and best projects that I've gain throughtout my learning experience. 
 Here I mainly focuse on HTML and CSS. 
 
